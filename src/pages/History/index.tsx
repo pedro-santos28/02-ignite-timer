@@ -3,6 +3,7 @@ import { HistoryContainer, HistoryList, Status } from './style'
 import { CyclesContext } from '../../contexts/CycleContext'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/esm/locale'
+import { TableComponent } from './components/TableComponent'
 
 export const History = () => {
   const { cycles } = useContext(CyclesContext)
@@ -11,7 +12,8 @@ export const History = () => {
     <HistoryContainer>
       <h1> Meu histórico </h1>
       <HistoryList>
-        <table>
+        <TableComponent />
+        {/* <table>
           <thead>
             <tr>
               <th>Tarefa</th>
@@ -27,7 +29,7 @@ export const History = () => {
                   <td>{cycle.task}</td>
                   <td>{cycle.minutesAmount} minuto(s)</td>
                   <td>
-                    {formatDistanceToNow(cycle.startDate, {
+                    {formatDistanceToNow(new Date(cycle.startDate), {
                       addSuffix: true,
                       locale: ptBR,
                     })}
@@ -47,7 +49,7 @@ export const History = () => {
               )
             })}
           </tbody>
-        </table>
+        </table> */}
       </HistoryList>
     </HistoryContainer>
   )

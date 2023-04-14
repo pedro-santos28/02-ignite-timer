@@ -24,9 +24,9 @@ export const NewCycleForm = () => {
         type="number"
         id="minutesAmount"
         placeholder="00"
-        // step={5}
+        step={5}
         max={60}
-        // min={5}
+        min={5}
         disabled={!!activeCycle}
       />
       <span>minutos.</span>

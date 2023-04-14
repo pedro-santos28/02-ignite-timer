@@ -10,8 +10,12 @@
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@hookform/resolvers": "^3.0.0",
+    "@mui/material": "^5.11.15",
     "date-fns": "^2.29.3",
+    "immer": "^9.0.21",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
